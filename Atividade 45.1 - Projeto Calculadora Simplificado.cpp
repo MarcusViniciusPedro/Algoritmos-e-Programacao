@@ -1,22 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h> // Para a funÁ„o exit()
+#include <stdlib.h> // Para a fun√ß√£o exit()
 
 int main() {
     char operacao;
     float num1, num2, resultado;
 
-    for (;;) { // Loop infinito atÈ que o usu·rio escolha 'S'
-        printf("\nEscolha a operaÁ„o (+, -, *, / ou S para sair): ");
-        scanf(" %c", &operacao); // Note o espaÁo antes de %c para consumir espaÁos em branco
+    for (;;) { // Loop infinito at√© que o usu√°rio escolha 'S'
+        printf("\nEscolha a opera√ß√£o (+, -, *, / ou S para sair): ");
+        scanf(" %c", &operacao); // Note o espa√ßo antes de %c para consumir espa√ßos em branco
 
         switch (operacao) {
             case '+':
             case '-':
             case '*':
             case '/':
-                printf("Digite o primeiro n˙mero: ");
+                printf("Digite o primeiro n√∫mero: ");
                 scanf("%f", &num1);
-                printf("Digite o segundo n˙mero: ");
+                printf("Digite o segundo n√∫mero: ");
                 scanf("%f", &num2);
 
                 switch (operacao) {
@@ -37,19 +37,19 @@ int main() {
                             resultado = num1 / num2;
                             printf("Resultado: %.2f\n", resultado);
                         } else {
-                            printf("Erro: Divis„o por zero!\n");
+                            printf("Erro: Divis√£o por zero!\n");
                         }
                         break;
                 }
                 break;
             case 'S':
-            case 's': // Permite que o usu·rio digite 'S' ou 's' para sair
+            case 's': // Permite que o usu√°rio digite 'S' ou 's' para sair
                 printf("Encerrando a calculadora.\n");
-                exit(0); // Encerra o programa com cÛdigo de sucesso
+                exit(0); // Encerra o programa com c√≥digo de sucesso
             default:
-                printf("OperaÁ„o inv·lida. Por favor, digite +, -, *, / ou S.\n");
+                printf("Opera√ß√£o inv√°lida. Por favor, digite +, -, *, / ou S.\n");
         }
     }
 
-    return 0; // Esta linha nunca ser· alcanÁada devido ao loop infinito e ao exit()
+    return 0; // Esta linha nunca ser√° alcan√ßada devido ao loop infinito e ao exit()
 }
