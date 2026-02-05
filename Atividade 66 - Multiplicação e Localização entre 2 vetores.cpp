@@ -8,9 +8,9 @@ int main (){
 	for(i = 0; i <= 7; ++i){
 		printf("\n Digite um numero: ");
 		scanf("%d", &n[i]);
-		m[i] = n[i] * 5; /*Multiplicação e armazenamento de n[i] em m[i]*/
+		m[i] = n[i] * 5; /*MultiplicaÃ§Ã£o e armazenamento de n[i] em m[i]*/
 	}
-	/*Bubble Sort de m[i] em comparação ao m[j] passando as informações de um para o outro*/
+	/*Bubble Sort de m[i] em comparaÃ§Ã£o ao m[j] passando as informaÃ§Ãµes de um para o outro*/
 	for(i = 0; i <= 6; ++i)
 	for(j = j + 1; j <= 7; ++j){
 		if(m[i] > m[j]){
@@ -20,14 +20,14 @@ int main (){
 		}
 	}
 	for(j = 0; j <= 7; ++j){
-		printf("\n %d", m[j]); /*Exibição de m[j]*/
+		printf("\n %d", m[j]); /*ExibiÃ§Ã£o de m[j]*/
 	}
-	/*Pesquisa dos números condescendentes de m[j] ao escrever o número relacionado a multiplicação de 5*/
+	/*Pesquisa dos nÃºmeros condescendentes de m[j] ao escrever o nÃºmero relacionado a multiplicaÃ§Ã£o de 5*/
 	printf("\nentre com o numero a ser pesquisado: ");
 	scanf("%d", &b);
 	j = 0;
 	a = 0;
-	/*Projeção de onde o número foi encontrado (Ex: localizado em: 1)*/
+	/*ProjeÃ§Ã£o de onde o nÃºmero foi encontrado (Ex: localizado em: 1)*/
 	while (j <= 7 && a == 0){
 		if (m[j] == b){
 			a = 1;
