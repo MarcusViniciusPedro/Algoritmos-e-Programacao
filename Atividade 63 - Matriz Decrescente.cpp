@@ -15,7 +15,8 @@ int main (){
 	printf("A matriz B e:\n ");
 	
 	for (i = 0; i <= 9; ++i){
-		printf("Numero %i:%i\n", i + 1, b[i]);
+		printf("Numero %i:%i\n", i + 1, b[i]); //A matriz é decrescente
 	}
 	return 0;
 }
+
