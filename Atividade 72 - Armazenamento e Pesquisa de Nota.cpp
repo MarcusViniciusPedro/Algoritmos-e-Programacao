@@ -9,7 +9,7 @@ int main (){
 		printf("\n Digite nota %d: ", i + 1);
 		scanf("%d", &A[i]);
 	}
-	/*Bubble Sort de B[i] em comparação ao B[j] passando as informações de um para o outro com o auxiliar x*/
+	/*Bubble Sort de B[i] em comparaÃ§Ã£o ao B[j] passando as informaÃ§Ãµes de um para o outro com o auxiliar x*/
 	for(i = 0; i < 3; ++i)
 	for(j = i; j < 4; ++j){
 		if(A[i] > A[j]){
@@ -19,14 +19,14 @@ int main (){
 		}
 	}
 	for(j = 0; j < 4; ++j){
-		printf("\n %d", A[j]); /*Exibição de A[j]*/
+		printf("\n %d", A[j]); /*ExibiÃ§Ã£o de A[j]*/
 	}
-	/*Pesquisa dos números condescendentes de m[j] ao escrever o número relacionado a multiplicação de 5*/
+	/*Pesquisa dos nÃºmeros condescendentes de m[j] ao escrever o nÃºmero relacionado a multiplicaÃ§Ã£o de 5*/
 	printf("\n\nEntre com uma nota para ser pesquisado: ");
 	scanf("%d", &b);
 	j = 0;
 	a = 0;
-	/*Projeção de onde o número foi encontrado (Ex: localizado em: 1)*/
+	/*ProjeÃ§Ã£o de onde o nÃºmero foi encontrado (Ex: localizado em: 1)*/
 	while (j < 4 && a == 0){
 		if (A[j] == b){
 			a = 1;
@@ -35,7 +35,7 @@ int main (){
 			j = j + 1;
 		}
 		if (a == 1)
-		printf ("\nFoi localizado em: %d", j + 1); /*Identificação espacial de onde o valor foi encontrado pela primeira vez*/
+		printf ("\nFoi localizado em: %d", j + 1); /*IdentificaÃ§Ã£o espacial de onde o valor foi encontrado pela primeira vez*/
 	}
 	return 0;
 }
