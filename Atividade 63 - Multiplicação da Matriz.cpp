@@ -8,7 +8,7 @@ int main (){
 	for (i = 0; i <= 7; ++i){
 		printf("Numero %i:", i + 1);
 		scanf("%i", &a[i]);
-		b[i] = a[i] * a[i];
+		b[i] = a[i] * a[i]; //Multiplica o valor da matriz por ele mesmo
 	}
 	printf("A matriz B e:\n");
 	for (i = 0; i <= 7; ++i){
@@ -16,3 +16,4 @@ int main (){
 	}
 	return 0;
 }
+
